@@ -1,0 +1,27 @@
+<br/>
+<br/>
+<br/>
+<div class="container-fluid">
+  <h4>Movie Artists</h4>
+  <div class="col-sm-4">
+    <div *ngFor="let allArtist of allArtists">
+      <template #tolTemplate>
+        Height: {{allArtist.height}}
+        <br/>
+        Mass: {{allArtist.mass}}
+      </template>
+      <span [tooltip]="tolTemplate" placement="right">
+    {{allArtist.name}}
+    </span>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-6">
+      <img src="https://s3.amazonaws.com/starwarsimages/star-wars-luke-skywalker-wraithdt-big.jpg" class="img-circle person" alt="Random Name"/>
+      <img src="https://s3.amazonaws.com/starwarsimages/Leia_Organa_by_Anthony_Foti.jpg" class="img-circle person" alt="Random Name"/>
+      <img src="https://s3.amazonaws.com/starwarsimages/Young_owen.jpg" class="img-circle person" alt="Random Name"/>
+    </div>
+  </div>
+</div>
+
+

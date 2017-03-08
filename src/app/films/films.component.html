@@ -1,0 +1,24 @@
+<br/>
+<br/>
+<br/>
+<div class="container-fluid">
+  <h4 class="text-center">List Of Films</h4>
+  <accordion [closeOthers]="oneAtATime">
+    <accordion-group *ngFor="let allFilm of allFilms" #group>
+      <div accordion-heading>
+        {{allFilm.title}}
+        <i class="pull-right float-xs-right glyphicon"
+           [ngClass]="{'glyphicon-chevron-down': group?.isOpen, 'glyphicon-chevron-right': !group?.isOpen}"></i>
+      </div>
+      <li><strong>Director:</strong> {{ allFilm.director }}</li>
+      <li><strong>Producer:</strong> {{ allFilm.producer }}</li>
+      <li><strong>Opening Crawl:</strong> {{ allFilm.opening_crawl }}</li>
+    </accordion-group>
+  </accordion>
+</div>
+
+
+
+
+
+

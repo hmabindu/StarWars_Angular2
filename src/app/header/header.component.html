@@ -1,0 +1,52 @@
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand">StarWars</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right block-menu">
+        <li>
+          <a [routerLink]="'/'" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="three-d">
+          HOME
+            <span aria-hidden="true" class="three-d-box">
+			      <span class="front">HOME</span>
+			      <span class="back">HOME</span>
+		        </span>
+          </a>
+        </li>
+        <li>
+          <a [routerLink]="'/films'" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="three-d">
+            FILMS
+            <span aria-hidden="true" class="three-d-box">
+			      <span class="front">FILMS</span>
+			      <span class="back">FILMS</span>
+		        </span>
+          </a>
+        </li>
+        <li>
+          <a [routerLink]="'/people'" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="three-d">
+            PEOPLE
+            <span aria-hidden="true" class="three-d-box">
+			      <span class="front">PEOPLE</span>
+			      <span class="back">PEOPLE</span>
+		        </span>
+          </a>
+        </li>
+        <li>
+          <a [routerLink]="'/starships'" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="three-d">
+            STARSHIPS
+            <span aria-hidden="true" class="three-d-box">
+			      <span class="front">STARSHIPS</span>
+			      <span class="back">STARSHIPS</span>
+		        </span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
